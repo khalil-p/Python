@@ -1,19 +1,24 @@
+class Employee:
+    company = "Google"
+    eCode = 120
+
+
 class Freelancer:
     company = "Fiverr"
     level = 0
 
     def upgradeLevel(self):
         self.level = self.level + 1
-
-
-class Employee:
-    company = "Visa"
-    eCode = 120
+        print(self.level)
 
 
 class Programmer(Freelancer, Employee):
-    name = "Rohit"
+    name = "Khalil"
+    level = 2
 
+
+e = Employee()
+f = Freelancer()
 
 p = Programmer()
 p.upgradeLevel()
